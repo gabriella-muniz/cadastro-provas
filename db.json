@@ -1,0 +1,57 @@
+{
+  "institutions": [
+    {
+      "id": "9207",
+      "name": "Exemplo"
+    },
+    {
+      "id": "be5c",
+      "name": "Exemplo 2"
+    },
+    {
+      "id": "1d94",
+      "name": "Exemplo"
+    },
+    {
+      "id": "febd",
+      "name": "a"
+    },
+    {
+      "id": "4eb9",
+      "name": "Olá"
+    },
+    {
+      "id": "8a75",
+      "name": "Secretaria",
+      "idLegacy": "1"
+    },
+    {
+      "id": "0b60",
+      "name": "t",
+      "idLegacy": "t"
+    }
+  ],
+  "schools": [
+    {
+      "id": "ad32",
+      "name": "Monteiro",
+      "idLegacy": "2"
+    },
+    {
+      "id": "479a",
+      "name": "a",
+      "idLegacy": "b"
+    },
+    {
+      "id": "a9db",
+      "name": "ui",
+      "idLegacy": "ui"
+    }
+  ],
+  "classes": [],
+  "students": [],
+  "questions": [],
+  "answers": [],
+  "exams": [],
+  "applications": []
+}
