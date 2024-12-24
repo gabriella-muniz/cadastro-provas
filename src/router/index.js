@@ -6,11 +6,7 @@ import SchoolForm from "@/components/SchoolForm.vue"; // Cadastro de Escolas
 
 
 const routes = [
-    {
-      path: "/",
-      name: "App",
-      component: App,  // Página principal com as opções de cadastro
-    },
+    
     {
       path: "/institutions",
       name: "Institutions",
