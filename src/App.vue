@@ -19,6 +19,8 @@
           >
             Cadastro de Escolas
           </button>
+          <button @click="navigateTo('students')" class="bg-indigo-500 hover:bg-indigo-700 text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-300" >Cadastro de Alunos</button>
+          <button @click="navigateTo('question')" class="bg-indigo-500 hover:bg-indigo-700 text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-300" >Cadastro de Questões</button>
         </div>
       </div>
     </header>
