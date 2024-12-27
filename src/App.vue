@@ -19,8 +19,11 @@
           >
             Cadastro de Escolas
           </button>
+          <button @click="navigateTo('Classes')" class="bg-indigo-500 hover:bg-indigo-700 text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-300" >Cadastro de Turmas</button>
           <button @click="navigateTo('students')" class="bg-indigo-500 hover:bg-indigo-700 text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-300" >Cadastro de Alunos</button>
           <button @click="navigateTo('question')" class="bg-indigo-500 hover:bg-indigo-700 text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-300" >Cadastro de Questões</button>
+          <button @click="navigateTo('Exams')" class="bg-indigo-500 hover:bg-indigo-700 text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-300" >Cadastro de Provas</button>
+          <button @click="navigateTo('Application')" class="bg-indigo-500 hover:bg-indigo-700 text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-300 mt-2" >Cadastro de Aplicação</button>
         </div>
       </div>
     </header>

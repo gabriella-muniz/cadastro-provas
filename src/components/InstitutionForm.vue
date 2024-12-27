@@ -56,7 +56,7 @@ export default {
         name: "",
         idLegacy: "",
       },
-      message: "", // Mensagem de confirmação
+      message: "", 
     };
   },
   methods: {
@@ -82,7 +82,7 @@ export default {
       this.institution.name = "";
       this.institution.idLegacy = "";
 
-      // Exibe a mensagem de sucesso
+      
       this.message = "Instituição cadastrada com sucesso!";
 
       // Limpa a mensagem após 3 segundos
@@ -91,14 +91,13 @@ export default {
       }, 3000);
     },
 
-    // Função para buscar todas as instituições
+    
     async fetchInstitutions() {
       const response = await axios.get("http://localhost:3000/institutions");
-      this.institutions = response.data; // Atualiza a lista de instituições com a resposta da API
+      this.institutions = response.data; 
     },
   },
   mounted() {
-    // Chama a função para pegar as instituições da API ao carregar a aplicação
     this.fetchInstitutions();
   },
 };
