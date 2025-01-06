@@ -100,12 +100,12 @@
           id_legacy: "",
           name: "",
           level: "",
-          institutionName: "", // Campo para armazenar a instituição selecionada
-          schoolName: "", // Campo para armazenar a escola selecionada
+          institutionName: "", 
+          schoolName: "", 
         },
-        institutions: [], // Lista de instituições
-        schools: [], // Lista de escolas da instituição selecionada
-        message: "", // Mensagem de feedback
+        institutions: [], 
+        schools: [], 
+        message: "", 
       };
     },
     methods: {
@@ -134,11 +134,11 @@
   
       // Handler para quando a instituição é alterada
       onInstitutionChange() {
-        this.classData.schoolName = ""; // Limpa o campo de escola
+        this.classData.schoolName = ""; 
         if (this.classData.institutionName) {
-          this.fetchSchools(this.classData.institutionName); // Busca as escolas da instituição selecionada
+          this.fetchSchools(this.classData.institutionName); 
         } else {
-          this.schools = []; // Limpa a lista de escolas
+          this.schools = []; 
         }
       },
   
@@ -157,9 +157,8 @@
             institutionName: "",
             schoolName: "",
           };
-          this.schools = []; // Limpa as escolas também
-  
-          // Limpa a mensagem após 3 segundos
+          this.schools = []; 
+
           setTimeout(() => {
             this.message = "";
           }, 3000);

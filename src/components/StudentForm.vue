@@ -105,14 +105,14 @@ export default {
       studentData: {
         matricula: "",
         name: "",
-        institutionName: "", // Campo para armazenar a instituição selecionada
-        schoolName: "", // Campo para armazenar a escola selecionada
-        className: "", // Campo para armazenar a turma selecionada
+        institutionName: "",
+        schoolName: "", 
+        className: "",
       },
-      institutions: [], // Lista de instituições
-      schools: [], // Lista de escolas da instituição selecionada
-      classes: [], // Lista de turmas da escola selecionada
-      message: "", // Mensagem de feedback
+      institutions: [], 
+      schools: [], 
+      classes: [], 
+      message: "", 
     };
   },
   methods: {
@@ -154,23 +154,23 @@ export default {
 
     // Handler para quando a instituição é alterada
     onInstitutionChange() {
-      this.studentData.schoolName = ""; // Limpa o campo de escola
-      this.studentData.className = ""; // Limpa o campo de turma
+      this.studentData.schoolName = "";
+      this.studentData.className = ""; 
       if (this.studentData.institutionName) {
-        this.fetchSchools(this.studentData.institutionName); // Busca as escolas da instituição selecionada
+        this.fetchSchools(this.studentData.institutionName);
       } else {
-        this.schools = []; // Limpa a lista de escolas
-        this.classes = []; // Limpa a lista de turmas
+        this.schools = []; 
+        this.classes = []; 
       }
     },
 
     // Handler para quando a escola é alterada
     onSchoolChange() {
-      this.studentData.className = ""; // Limpa o campo de turma
+      this.studentData.className = ""; 
       if (this.studentData.schoolName) {
-        this.fetchClasses(this.studentData.schoolName); // Busca as turmas da escola selecionada
+        this.fetchClasses(this.studentData.schoolName); 
       } else {
-        this.classes = []; // Limpa a lista de turmas
+        this.classes = []; 
       }
     },
 

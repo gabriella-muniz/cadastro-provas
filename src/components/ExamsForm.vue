@@ -69,11 +69,11 @@
     data() {
       return {
         examData: {
-          level: "", // Nível da prova
+          level: "", 
         },
-        questions: [], // Todas as questões cadastradas
-        filteredQuestions: [], // Questões filtradas pelo nível
-        selectedQuestions: [], // Questões selecionadas para a prova
+        questions: [], 
+        filteredQuestions: [], 
+        selectedQuestions: [], 
         message: "",
       };
     },
@@ -86,14 +86,14 @@
         // Inicializar com todas as questões disponíveis
         this.filteredQuestions = this.questions;
   
-        console.log("Questões carregadas:", this.questions); // Log para depuração
+        console.log("Questões carregadas:", this.questions); 
       } catch (error) {
         console.error("Erro ao carregar questões:", error);
       }
     },
     methods: {
       filterQuestions() {
-        console.log("Nível selecionado:", this.examData.level); // Debug
+        console.log("Nível selecionado:", this.examData.level); 
   
         // Garantir que o nível está definido e corresponde a alguma questão
         if (this.examData.level) {

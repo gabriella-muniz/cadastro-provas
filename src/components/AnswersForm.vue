@@ -74,9 +74,9 @@ import axios from "axios";
 export default {
   data() {
     return {
-      message: "", // Mensagem de feedback
-      question: null, // Questão que será exibida
-      options: [{ description: "", is_correct: false }], // Opções de respostas
+      message: "", 
+      question: null, 
+      options: [{ description: "", is_correct: false }], 
     };
   },
   methods: {
@@ -91,7 +91,7 @@ export default {
       this.options = this.question.answers || [{ description: "", is_correct: false }];
     },
 
-    // Adicionar uma nova opção
+   
     addOption() {
       this.options.push({ description: "", is_correct: false });
     },
@@ -101,14 +101,14 @@ export default {
       this.options.splice(index, 1);
     },
 
-    // Submeter as opções para a API
+    
     async submitOptions() {
       const questionId = this.$route.params.questionId;
 
       try {
-        // Preparar as opções para salvar, preservando o 'id' se já existir
+        
         const optionsToSave = this.options.map(option => ({
-          id: option.id || Date.now().toString(), // Se 'id' existir, preserva; senão, gera um novo ID temporário
+          id: option.id || Date.now().toString(), 
           question_id: questionId,
           description: option.description,
           is_correct: option.is_correct,
@@ -118,11 +118,11 @@ export default {
         const response = await axios.put(
           `http://localhost:3000/questions/${questionId}`,
           {
-            // Preservar as informações da questão (description, level, etc.)
+           
             description: this.question.description,
             level: this.question.level,
-            levelLink: this.question.levelLink, // Caso haja esse campo
-            answers: optionsToSave, // Atualizar as respostas com IDs
+            levelLink: this.question.levelLink,
+            answers: optionsToSave, 
           }
         );
 
